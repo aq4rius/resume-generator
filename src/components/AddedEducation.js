@@ -1,0 +1,34 @@
+import React from "react";
+
+const AddedEducation = (props) => {
+  const { allEducation, deleteEducation } = props;
+
+  const handleDelete = (index) => {
+    deleteEducation(index);
+  };
+
+  return (
+    <div className="added-education-component">
+      {allEducation.map((education, index) => {
+        return (
+          <div key={education.id + index}>
+            <div>
+              <div key={education.id + "_company" + index}>
+                {"Institution: " + education.institution}
+              </div>
+              <div key={education.id + "_position" + index}>
+                {"Field: " + education.field}
+              </div>
+            </div>
+            <div key={education.id + "_dateFrom" + index}>
+              {education.dateFrom + " to " + education.dateTo}
+            </div>
+            <button onClick={() => handleDelete(index)}>Delete</button>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default AddedEducation;

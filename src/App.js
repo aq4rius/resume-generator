@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     return (
       <div id="container">
-        <h1 className="no-print">React Resume Generator</h1>
-        <div id="components" className="no-print">
+        <h1>React Resume Generator</h1>
+        <div id="components">
           <GeneralInfo />
           <Experience />
           <Education />
