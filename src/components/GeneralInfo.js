@@ -53,7 +53,7 @@ export default class GeneralInfo extends Component {
       <div>
         <h3>General Info</h3>
         {this.state.isEditing ? (
-          <form id="general-info-edit">
+          <form id="general-info-edit" className="no-print">
             <div>
               <div>
                 <label>First Name:</label>
@@ -91,7 +91,11 @@ export default class GeneralInfo extends Component {
               </div>
             </div>
             <div>
-              <button id="add-education" onClick={this.handleSaveClick}>
+              <button
+                id="add-education"
+                onClick={this.handleSaveClick}
+                className="no-print"
+              >
                 Save
               </button>
             </div>
@@ -101,7 +105,11 @@ export default class GeneralInfo extends Component {
             <div>{this.state.firstName + " " + this.state.lastName} </div>
             <div>{this.state.email}</div>
             <div>{this.state.phoneNumber}</div>
-            <button id="add-education" onClick={this.handleEditClick}>
+            <button
+              id="add-education"
+              onClick={this.handleEditClick}
+              className="no-print"
+            >
               Edit
             </button>
           </div>

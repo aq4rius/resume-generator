@@ -81,7 +81,7 @@ export default class Education extends Component {
             deleteEducation={this.deleteEducation}
           />
         </div>
-        <form onSubmit={this.onSubmitEducation}>
+        <form className="no-print" onSubmit={this.onSubmitEducation}>
           <div>
             <div>
               <label>Institution:</label>
@@ -120,7 +120,7 @@ export default class Education extends Component {
               ></input>
             </div>
           </div>
-          <button id="add-education" type="submit">
+          <button id="add-education" type="submit" className="no-print">
             Save
           </button>
         </form>

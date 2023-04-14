@@ -12,6 +12,20 @@ class App extends Component {
           <GeneralInfo />
           <Experience />
           <Education />
+          <div className="preview-buttons">
+            <button id="button" className="no-print">
+              Preview
+            </button>
+            <button
+              id="button"
+              className="no-print"
+              onClick={() => {
+                window.print();
+              }}
+            >
+              Print to pdf
+            </button>
+          </div>
         </div>
       </div>
     );

@@ -28,7 +28,9 @@ const AddedExperience = (props) => {
                 {"Tasks: " + experience.tasks.text}
               </div>
             </div>
-            <button onClick={() => handleDelete(index)}>Delete</button>
+            <button className="no-print" onClick={() => handleDelete(index)}>
+              Delete
+            </button>
           </div>
         );
       })}

@@ -110,7 +110,7 @@ export default class Experience extends Component {
   deleteExperience = (index) => {
     this.setState((prevState) => ({
       allExperience: prevState.allExperience.filter(
-        (experience, i) => i !== index
+        (education, i) => i !== index
       ),
     }));
   };
@@ -125,7 +125,7 @@ export default class Experience extends Component {
             deleteExperience={this.deleteExperience}
           />
         </div>
-        <form onSubmit={this.onSubmitExperience}>
+        <form onSubmit={this.onSubmitExperience} className="no-print">
           <div>
             <div>
               <label>Company:</label>
@@ -174,7 +174,7 @@ export default class Experience extends Component {
               ></textarea>
             </div>
           </div>
-          <button id="add-experience" type="submit">
+          <button id="add-experience" type="submit" className="no-print">
             Save
           </button>
         </form>

@@ -60,6 +60,22 @@ label {
   margin-right: 20px;
 }
 
+input {
+  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.date {
+  width: 203px;
+}
+
+textarea {
+  height: 100px;
+  width: 450px;
+  margin-bottom: 10px;
+}
+
 button {
   padding-left: auto;
   padding-right: auto;
@@ -67,4 +83,37 @@ button {
   height: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#added-experience {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+#added-experience {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.added-experience-component {
+  margin: 0px;
+}
+
+.tasks {
+  inline-size: 500px;
+  overflow-wrap: break-word;
+}
+
+.preview-buttons > button {
+  background-color: rgb(4, 76, 98);
+  color: white;
+}
+
+.preview-buttons {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+  gap: 45px;
 }
